@@ -1,0 +1,7 @@
+{
+  "name": "My_Coach",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
