@@ -1,20 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>My Coach</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">My Coach</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-content class="ion-padding">
+    <div class="welcome-text">
+      <h2>Bienvenido a My Coach</h2>
+      <p>Tu asistente personal para alcanzar tus metas </p>
+    </div>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>¿Qué deseas hacer hoy?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button expand="block" color="primary">Iniciar Entrenamiento</ion-button>
+        <ion-button expand="block" fill="outline">Ver Progreso</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Consejo del día</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        La disciplina supera a la motivación. ¡Sigue avanzando!
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
 </ion-content>
