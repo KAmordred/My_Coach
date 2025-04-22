@@ -5,41 +5,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="block">Alumnos</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-<ion-accordion-group>
-  <ion-accordion value="first">
-    <ion-item slot="header" color="light">
-      <ion-label>Alan Barrera</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">First Content</div>
-  </ion-accordion>
-  <ion-accordion value="second">
-    <ion-item slot="header" color="light">
-      <ion-label>José Calderón</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">Second Content</div>
-  </ion-accordion>
-  <ion-accordion value="third">
-    <ion-item slot="header" color="light">
-      <ion-label>Carlos Araya</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">Third Content</div>
-  </ion-accordion>
-  <ion-accordion value="fourth">
-    <ion-item slot="header" color="light">
-      <ion-label>Andres Carranza</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">Third Content</div>
-  </ion-accordion>
-  <ion-accordion value="five">
-    <ion-item slot="header" color="light">
-      <ion-label>Gina Nexlson</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">GOOOOORDAAAAAAA</div>
-  </ion-accordion>
-</ion-accordion-group>
+  <ion-accordion-group>
+    <ion-accordion *ngFor="let alumno of alumnos" [value]="alumno.id">
+      <ion-item slot="header" color="light">
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label>{{ alumno.nombre }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        {{ alumno.contenido }}
+        <ion-button fill="outline" size="small" class="ion-margin-top">
+          Ver perfil
+        </ion-button>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>
