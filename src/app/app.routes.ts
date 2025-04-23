@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'alumnos',
+    redirectTo: 'perfil-alumno',
     pathMatch: 'full',
   },
   {
@@ -18,5 +18,10 @@ export const routes: Routes = [
     path: 'alumnos',
     loadComponent: () => import('./alumnos/alumnos.page').then( m => m.AlumnosPage)
   },
+  {
+    path: 'perfil-alumno',
+    loadComponent: () => import('./perfil-alumno/perfil-alumno.page').then(m => m.ImcPage)
+  },
+
 
 ];

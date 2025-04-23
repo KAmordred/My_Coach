@@ -1,0 +1,23 @@
+ion-card {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  
+  ion-input {
+    --padding-start: 8px;
+  }
+  
+  ion-button {
+    margin-top: 16px;
+  }
+  
+  ion-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
