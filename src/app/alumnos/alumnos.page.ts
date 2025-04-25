@@ -3,13 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { IonAccordion, IonAccordionGroup, IonItem, IonLabel,IonHeader,IonToolbar,IonTitle,IonContent,IonButton,IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { personCircleOutline } from 'ionicons/icons';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-alumnos',
   templateUrl: './alumnos.page.html',
   styleUrls: ['./alumnos.page.scss'],
   standalone: true,
-  imports: [CommonModule ,IonAccordion, IonAccordionGroup, IonItem, IonLabel,IonHeader,IonToolbar,IonTitle,IonContent,IonButton,IonIcon],
+  imports: [CommonModule ,IonAccordion, IonAccordionGroup, IonItem, IonLabel,IonHeader,IonToolbar,IonTitle,IonContent,IonButton,IonIcon,RouterModule],
 })
 
 // HAY QUE CAMBIAR LAS ID PARA LOS ALUMNOS 
