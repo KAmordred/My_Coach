@@ -21,7 +21,11 @@ export const routes: Routes = [
   {
     path: 'perfil-alumno',
     loadComponent: () => import('./perfil-alumno/perfil-alumno.page').then(m => m.ImcPage)
+  },  {
+    path: 'ejercicios',
+    loadComponent: () => import('./ejercicios/ejercicios.page').then( m => m.EjerciciosPage)
   },
+
 
 
 ];

@@ -9,6 +9,7 @@ import {
 import { Chart, registerables } from 'chart.js';
 import { AnnotationOptions } from 'chartjs-plugin-annotation';
 import annotationPlugin from 'chartjs-plugin-annotation';
+import { RouterModule } from '@angular/router';
 
 // Extender tipos para Chart.js
 declare module 'chart.js' {
@@ -31,6 +32,7 @@ Chart.register(...registerables, annotationPlugin);
   styleUrls: ['./perfil-alumno.page.scss'],
   standalone: true,
   imports: [
+    RouterModule,
     CommonModule,
     FormsModule,
     IonContent,
